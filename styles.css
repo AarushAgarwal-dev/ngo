@@ -7,15 +7,15 @@
 
 /* Body styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    background-color: #333;
     padding: 20px 0;
 }
 
@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f0f0f0;
+    color: #4CAF50;
 }
 
 /* Main heading styles */
@@ -49,14 +49,14 @@ h1 {
     color: #333;
     text-align: center;
     margin-top: 40px;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
 }
 
 /* Sub-heading styles */
 h2 {
     color: #333;
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 20px;
 }
 
@@ -69,7 +69,7 @@ section {
 .project, .success-story, .news-item, .gallery-item, .volunteer, .partner, .donate, .contact-info, .donation-method {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin-bottom: 40px;
     transition: all 0.3s ease;
@@ -77,7 +77,7 @@ section {
 
 .project:hover, .success-story:hover, .news-item:hover, .gallery-item:hover, .volunteer:hover, .partner:hover, .donate:hover, .contact-info:hover, .donation-method:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project img, .success-story img, .news-item img, .gallery-item img {
@@ -89,7 +89,7 @@ section {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -117,7 +117,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #f0f0f0;
+    color: #4CAF50;
 }
 
 /* Form styles */
@@ -148,7 +148,7 @@ form textarea:focus {
 }
 
 form button {
-    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 15px;
@@ -159,19 +159,23 @@ form button {
 }
 
 form button:hover {
-    background: linear-gradient(135deg, #43A047, #2E7D32);
+    background-color: #388E3C;
 }
 
 /* Button styles */
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    background-color: #4CAF50;
     color: white;
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;
     transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #388E3C;
 }
 
 .btn:hover {
