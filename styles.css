@@ -10,11 +10,12 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header styles */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
     padding: 20px 0;
 }
 
@@ -45,10 +46,11 @@ nav ul li a:hover {
 
 /* Main heading styles */
 h1 {
-    color: #4CAF50;
+    color: #333;
     text-align: center;
     margin-top: 40px;
     font-size: 36px;
+    font-weight: bold;
 }
 
 /* Sub-heading styles */
@@ -67,20 +69,27 @@ section {
 .project, .success-story, .news-item, .gallery-item, .volunteer, .partner, .donate, .contact-info, .donation-method {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.project:hover, .success-story:hover, .news-item:hover, .gallery-item:hover, .volunteer:hover, .partner:hover, .donate:hover, .contact-info:hover, .donation-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project img, .success-story img, .news-item img, .gallery-item img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 /* Footer styles */
 footer {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -129,10 +138,17 @@ form textarea {
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
 }
 
 form button {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
     color: white;
     border: none;
     padding: 15px;
@@ -143,14 +159,14 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background: linear-gradient(135deg, #43A047, #2E7D32);
 }
 
 /* Button styles */
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -159,5 +175,5 @@ form button:hover {
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background: linear-gradient(135deg, #43A047, #2E7D32);
 }
