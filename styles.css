@@ -58,6 +58,8 @@ h2 {
     color: #333;
     font-size: 28px;
     margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Section styles */
@@ -176,8 +178,4 @@ form button:hover {
 
 .btn:hover {
     background-color: #388E3C;
-}
-
-.btn:hover {
-    background: linear-gradient(135deg, #43A047, #2E7D32);
 }
