@@ -95,11 +95,9 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative; /* Changed from fixed to relative */
     width: 100%;
-    bottom: 0;
 }
-
 footer ul {
     list-style-type: none;
     padding: 0;
