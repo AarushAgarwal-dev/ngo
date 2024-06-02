@@ -1,70 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
     color: #333;
 }
 
 header {
-    background-color: #4CAF50;
-    padding: 10px 0;
+    background-color: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav ul li {
+header nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    color: #4CAF50;
+h1, h2 {
     text-align: center;
-    margin-top: 20px;
-}
-
-h2 {
-    color: #333;
+    color: #28a745;
 }
 
 section {
     padding: 20px;
 }
 
-.project, .success-story, .news-item, .gallery-item, .volunteer, .partner, .donate, .contact-info, .donation-method {
+#about p, #projects p, #success-stories p, #get-involved p, #news p, #gallery p, #contact p {
+    text-align: center;
     margin: 20px 0;
-    border: 1px solid #ddd;
+}
+
+.project, .success-story, .news-item, .gallery-item, .volunteer, .partner, .donate, .contact-info, .donation-method {
+    margin: 20px auto;
     padding: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
 }
 
 .project img, .success-story img, .news-item img, .gallery-item img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -94,6 +100,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label {
@@ -107,7 +115,7 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px;
@@ -116,17 +124,22 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #218838;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background-color: #218838;
 }
 
 .btn:hover {
