@@ -1,69 +1,89 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #4CAF50;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
+/* Navigation styles */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 nav ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #f0f0f0;
 }
 
+/* Main heading styles */
 h1 {
     color: #4CAF50;
     text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+/* Sub-heading styles */
+h2 {
+    color: #333;
+    font-size: 24px;
     margin-top: 20px;
 }
 
-h2 {
-    color: #333;
-}
-
+/* Section styles */
 section {
-    padding: 20px;
+    padding: 30px;
 }
 
+/* Card styles */
 .project, .success-story, .news-item, .gallery-item, .volunteer, .partner, .donate, .contact-info, .donation-method {
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
 }
 
 .project img, .success-story img, .news-item img, .gallery-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
+/* Footer styles */
 footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -73,60 +93,69 @@ footer ul {
     list-style-type: none;
     padding: 0;
     margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
 }
 
 footer ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
 footer ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 footer ul li a:hover {
-    text-decoration: underline;
+    color: #f0f0f0;
 }
 
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 form label {
     font-weight: bold;
+    font-size: 18px;
 }
 
-form input, form textarea {
-    padding: 10px;
+form input,
+form textarea {
+    padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
 form button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 form button:hover {
     background-color: #45a049;
 }
 
+/* Button styles */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
