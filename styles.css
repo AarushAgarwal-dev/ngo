@@ -1,76 +1,72 @@
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #28a745;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1em 0;
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+    margin: 0 1em;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-h1, h2 {
+#hero {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 2em 0;
     text-align: center;
-    color: #28a745;
 }
 
-section {
-    padding: 20px;
+#hero h1 {
+    margin: 0;
 }
 
-#about p, #projects p, #success-stories p, #get-involved p, #news p, #gallery p, #contact p {
+#hero p {
+    margin: 0.5em 0;
+}
+
+#hero .btn {
+    background-color: #FFD700;
+    color: #007BFF;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#highlights, #testimonials, #about, #projects, #get-involved, #news, #gallery, #contact, #donate {
+    padding: 2em 1em;
     text-align: center;
-    margin: 20px 0;
 }
 
-.project, .success-story, .news-item, .gallery-item, .volunteer, .partner, .donate, .contact-info, .donation-method {
-    margin: 20px auto;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
-    width: 80%;
-    max-width: 600px;
-}
-
-.project img, .success-story img, .news-item img, .gallery-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
+.highlight, .project, .gallery-item, .news-item {
+    margin: 1em 0;
 }
 
 footer {
-    background-color: #28a745;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
+    padding: 1em 0;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
@@ -78,68 +74,44 @@ footer {
 footer ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 footer ul li {
-    margin: 0 15px;
+    margin: 0 0.5em;
 }
 
 footer ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
+    align-items: center;
 }
 
 form label {
-    font-weight: bold;
+    margin-top: 1em;
 }
 
 form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    width: 100%;
+    max-width: 500px;
 }
 
 form button {
-    background-color: #28a745;
-    color: white;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background-color: #007BFF;
+    color: #fff;
     border: none;
-    padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #218838;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px auto;
-}
-
-.btn:hover {
-    background-color: #218838;
 }
 
 .btn:hover {
