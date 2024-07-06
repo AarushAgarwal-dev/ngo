@@ -182,7 +182,7 @@ form button:hover {
     background-color: #388E3C;
 }
 .highlight-img {
-    width: 300px; /* Set the width you want */
+    width: 500px; /* Set the width you want */
     height: 300px; /* Maintain the aspect ratio */
     text-align: center;
     display: block; /* Make the image a block element */
